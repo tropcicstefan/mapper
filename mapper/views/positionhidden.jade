@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h3.
+      Location
+    p=location[0].name
+    div#id=location[0]._id
+    button#pay Pay
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='/javascripts/truffle-contract.js')
+    script(src='/javascripts/web3.min.js')
+    script(src='/javascripts/positionhidden.js')

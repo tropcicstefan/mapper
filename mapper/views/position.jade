@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h3.
+      Location
+    p=location[0].name
+    img(src='#{location[0].pic}')
+    div=location[0].text
+    div.id=location[0]._id
+    button#back Back
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='/javascripts/position.js')				

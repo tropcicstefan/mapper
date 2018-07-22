@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    form(name="addlocation", action="/addlocation", method="post")
+      span Name
+      span &nbsp;
+      input(type="text", placeholder="location name", name="location")
+      br
+      br
+      span Description
+      span &nbsp;
+      input(type="textarea", placeholder="description", name="description")
+      br
+      br
+      span Image
+      span &nbsp;
+      input(type="text", placeholder="image link", name="image")
+      br
+      br
+      span Latitude
+      span &nbsp;
+      input(type="number", step="0.000001", placeholder="latitude", name="lat")
+      br
+      br
+      span Longitude
+      span &nbsp;
+      input(type="number", step="0.000001", placeholder="longitude", name="lon")
+      br
+      br
+      button#submit(type="submit") Submit
+
+    
